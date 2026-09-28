@@ -10,13 +10,30 @@ body {
 }
 
 .station-group {
+    --sdt-area: 0px;
+    --tdt-area: 0px;
     position: relative;
     height: 80px;
     display: flex;
     align-items: center;
     gap: 16px;
     padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: var(--sdt-area);
+    padding-bottom: var(--tdt-area);
+    
 }
+
+/*引き上げ線などのクラス。sdt:新大路方, tdt:館浜方, ddt:両方 に領域を追加*/
+/*memo: sdt= Shinoji Detention Track*/
+.station-group.detention-sdt-1 { --sdt-area: 48px }
+.station-group.detention-tdt-1 { --tdt-area: 48px }
+.station-group.detention-ddt-1 { --tdt-area: 48px; --sdt-area: 48px }
+
+/*引き上げ線がある駅は、列車アイコンの位置を引き上げ線分ずらす*/
+.station-group.detention-sdt-1 .train-icon { top: calc(50% + 24px) }
+.station-group.detention-tdt-1 .train-icon { top: calc(50% - 24px) }
 
 .station-row {
     position: absolute;

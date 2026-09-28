@@ -88,6 +88,273 @@
     margin-left:190px;
 }
 
+/*ここから引き上げ線関連*/
+/*命名について usdt: 上り線(up)側にある新大路方(s)引き上げ線(dt)*/
+/*命名について husdt: ホームと引き上げ線udstの半分地点(half)*/
+
+.train-icon-usdt1 {
+    position: absolute;
+    top: calc(50% - 48px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    right: 50%;
+    margin-right:40px;
+}
+
+.train-icon-usdt2 {
+    position: absolute;
+    top: calc(50% - 48px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    right: 50%;
+    margin-right:90px;
+}
+
+.train-icon-usdt3 {
+    position: absolute;
+    top: calc(50% - 48px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    right: 50%;
+    margin-right:140px;
+}
+
+.train-icon-dsdt1 {
+    position: absolute;
+    top: calc(50% - 48px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    left: 50%;
+    margin-left:40px;
+}
+
+.train-icon-dsdt2 {
+    position: absolute;
+    top: calc(50% - 48px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    left: 50%;
+    margin-left:90px;
+}
+
+.train-icon-dsdt3 {
+    position: absolute;
+    top: calc(50% - 48px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    left: 50%;
+    margin-left:140px;
+}
+
+.train-icon-utdt1 {
+    position: absolute;
+    top: calc(50% + 48px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    right: 50%;
+    margin-right:40px;
+}
+
+.train-icon-utdt2 {
+    position: absolute;
+    top: calc(50% + 48px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    right: 50%;
+    margin-right:90px;
+}
+
+.train-icon-utdt3 {
+    position: absolute;
+    top: calc(50% + 48px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    right: 50%;
+    margin-right:140px;
+}
+
+.train-icon-dtdt1 {
+    position: absolute;
+    top: calc(50% + 48px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    left: 50%;
+    margin-left:40px;
+}
+
+.train-icon-dtdt2 {
+    position: absolute;
+    top: calc(50% + 48px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    left: 50%;
+    margin-left:90px;
+}
+
+.train-icon-dtdt3 {
+    position: absolute;
+    top: calc(50% + 48px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    left: 50%;
+    margin-left:140px;
+}
+
+.train-icon-husdt1 {
+    position: absolute;
+    top: calc(50% - 24px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    right: 50%;
+    margin-right:40px;
+}
+
+.train-icon-husdt2 {
+    position: absolute;
+    top: calc(50% - 24px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    right: 50%;
+    margin-right:90px;
+}
+
+.train-icon-husdt3 {
+    position: absolute;
+    top: calc(50% - 24px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    right: 50%;
+    margin-right:140px;
+}
+
+.train-icon-hdsdt1 {
+    position: absolute;
+    top: calc(50% - 24px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    left: 50%;
+    margin-left:40px;
+}
+
+.train-icon-hdsdt2 {
+    position: absolute;
+    top: calc(50% - 24px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    left: 50%;
+    margin-left:90px;
+}
+
+.train-icon-hdsdt3 {
+    position: absolute;
+    top: calc(50% - 24px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    left: 50%;
+    margin-left:140px;
+}
+
+.train-icon-hutdt1 {
+    position: absolute;
+    top: calc(50% + 24px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    left: 50%;
+    margin-left:40px;
+}
+
+.train-icon-hutdt2 {
+    position: absolute;
+    top: calc(50% + 24px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    right: 50%;
+    margin-right:90px;
+}
+
+.train-icon-hutdt3 {
+    position: absolute;
+    top: calc(50% + 24px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    right: 50%;
+    margin-right:140px;
+}
+
+.train-icon-hdtdt1 {
+    position: absolute;
+    top: calc(50% + 24px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    left: 50%;
+    margin-left:40px;
+}
+
+.train-icon-hdtdt2 {
+    position: absolute;
+    top: calc(50% + 24px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    left: 50%;
+    margin-left:90px;
+}
+
+.train-icon-hdtdt3 {
+    position: absolute;
+    top: calc(50% + 24px) !important;
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    left: 50%;
+    margin-left:140px;
+}
 
 /* ここまで駅 */
 /* ここから駅間 */
