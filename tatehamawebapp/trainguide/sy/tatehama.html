@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../fixed-tab.css">
     <link rel="stylesheet" href="../train-detail-modal.css">
     <link rel="stylesheet" href="../train-timetable.css">
-    <script type="text/javascript" src="../setting.js" charset="utf-8"></script>
+    <script type="text/javascript" src="./setting.js" charset="utf-8"></script>
     <script type="text/javascript" src="../train-place.js" charset="utf-8"></script>
     <script type="text/javascript" src="../../receivedata.js" charset="utf-8"></script>
     <script type="text/javascript" src="../location-to-place.js" charset="utf-8"></script>
@@ -986,9 +986,8 @@
             </div>
         </div>
 
-
         <!-- 大道寺 -->
-        <div class="station-group">
+        <div class="station-group detention-sdt-1">
             <div class="station-background"></div>
             <div class="central-line"></div>
             <div class="station-node"></div>
@@ -1030,7 +1029,36 @@
         <div class="station-group">
             <div class="station-background"></div>
             <div class="central-line"></div>
-            <div class="train-icon-container" id="TH65-TH66">
+            <div class="train-icon-container" id="TH65-TH66S">
+                <!-- 生成する -->
+            </div>
+        </div>
+
+        <!-- 江ノ原信 -->
+        <div class="station-group detention-ddt-1">
+            <div class="station-background"></div>
+            <div class="central-line"></div>
+            <div class="station-node"></div>
+            <div class="station-data">
+                <div class="station-name">
+                    <div class="kanji">江ノ原信</div>
+                    <div class="kana-romaji">
+                        <div class="kana">えのはらしんごうじょう</div>
+                        <div class="romaji">Enohara-Shingojo</div>
+                    </div>
+                </div>
+                <div class="station-stop"></div>
+            </div>
+            <div class="train-icon-container" id="TH66S">
+                <!-- 生成する -->
+            </div>
+        </div>
+
+        <!-- 駅間 -->
+        <div class="station-group">
+            <div class="station-background"></div>
+            <div class="central-line"></div>
+            <div class="train-icon-container" id="TH66S-TH66">
                 <!-- 生成する -->
             </div>
         </div>
@@ -1080,7 +1108,8 @@
         </div>
 
         <!-- 新野崎 -->
-        <div class="station-group">
+        <div class="station-group detention-sdt-1">
+            <div class="detention-area"></div>
             <div class="station-background"></div>
             <div class="central-line"></div>
             <div class="station-node"></div>
@@ -1363,7 +1392,7 @@
         </div>
 
         <!-- 駒野 -->
-        <div class="station-group">
+        <div class="station-group detention-tdt-1">
             <div class="station-background"></div>
             <div class="central-line"></div>
             <div class="station-node"></div>
