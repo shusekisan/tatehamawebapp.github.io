@@ -33,9 +33,10 @@ function location_to_place() {
         else {   //âwä‘Ç…ç›ê¸ÇµÇƒÇÈéû(nextstaÇ™nullÇÃÇ∆Ç´)//
             Place_name = Trainlocation[1] + '-' + Trainlocation[2]
         }
-
-        Place_name = Place_name.replace("TH65-TH66S", "TH65-TH66").replace("TH66S-TH66", "TH65-TH66");
-
+        
+        if (hiddenTH66S ?? true){
+            Place_name = Place_name.replace("TH65-TH66S", "TH65-TH66").replace("TH66S-TH66", "TH65-TH66");
+        }
 
 
         dianame_location[TrackCircuit.Last] = Place_name 
