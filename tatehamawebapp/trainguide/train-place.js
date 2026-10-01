@@ -10,7 +10,7 @@ function TrainPlace(sta1, sta2, updown, count, position, type, dianame) {
     }
 
     if (sta2 == null) {
-        const match = sta1.match(/^([A-Z0-9]+)_(up|down)(\d+)$/);
+        const match = sta1.match(/^([A-Z0-9]+)_(up|down|hdsdt|dsdt|hdtdt|dtdt|husdt|usdt|hutdt|utdt)(\d+)$/);
         if (match) {
             Place_name = match[1];
             Train_icon_position = 'train-icon-' + match[2] + match[3];
