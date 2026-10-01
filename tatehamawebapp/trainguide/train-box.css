@@ -297,8 +297,8 @@
     width: 28px;
     height: 40px;
     z-index: 4;
-    left: 50%;
-    margin-left:40px;
+    right: 50%;
+    margin-right:40px;
 }
 
 .train-icon-hutdt2 {
