@@ -27,13 +27,20 @@ body {
 
 /*引き上げ線などのクラス。sdt:新大路方, tdt:館浜方, ddt:両方 に領域を追加*/
 /*memo: sdt= Shinoji Detention Track*/
-.station-group.detention-sdt-1 { --sdt-area: 48px }
-.station-group.detention-tdt-1 { --tdt-area: 48px }
-.station-group.detention-ddt-1 { --tdt-area: 48px; --sdt-area: 48px }
+
+/*新大路方にhalfサイズの領域を追加(浜園)*/
+.station-group.detention-sdt-h { --sdt-area: 48px }
+/*新大路方に領域を追加(大道寺・新野崎)*/
+.station-group.detention-sdt-1 { --sdt-area: 96px }
+/*館浜方に領域を追加(駒野電留線)*/
+.station-group.detention-tdt-1 { --tdt-area: 144px }
+/*館浜方+新大路方それぞれに引上げ線 (江ノ検)*/
+.station-group.detention-ddt-1 { --tdt-area: 96px; --sdt-area: 96px }
 
 /*引き上げ線がある駅は、列車アイコンの位置を引き上げ線分ずらす*/
-.station-group.detention-sdt-1 .train-icon { top: calc(50% + 24px) }
-.station-group.detention-tdt-1 .train-icon { top: calc(50% - 24px) }
+.station-group.detention-sdt-h .train-icon { top: calc(50% + 24px) }
+.station-group.detention-sdt-1 .train-icon { top: calc(50% + 48px) }
+.station-group.detention-tdt-1 .train-icon { top: calc(50% - 72px) }
 
 .station-row {
     position: absolute;
