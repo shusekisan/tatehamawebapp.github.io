@@ -9,7 +9,7 @@ var Location_data = {
 };
 
 
-const DEBUG_MODE = 1;
+const DEBUG_MODE = false;
 
 async function Getdata() {
     if (DEBUG_MODE) {
