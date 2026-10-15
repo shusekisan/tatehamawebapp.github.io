@@ -3,6 +3,7 @@
 // グローバル変数として初期化
 var Location_data = {
     "ServerMode": false,
+    "TimeOffset": -10,
     "TrackCircuitData": [],
     "TrainInfos": {},
     "OperationInformations": []
