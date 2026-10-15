@@ -12,6 +12,7 @@ body {
 .station-group {
     --sdt-area: 0px;
     --tdt-area: 0px;
+    --station-node-y: calc(50% + (var(--sdt-area) - var(--tdt-area)) / 2);
     position: relative;
     height: 80px;
     display: flex;
@@ -29,18 +30,31 @@ body {
 /*memo: sdt= Shinoji Detention Track*/
 
 /*新大路方にhalfサイズの領域を追加(浜園)*/
-.station-group.detention-sdt-h { --sdt-area: 48px }
+.station-group.detention-sdt-h { --sdt-area: 60px }
 /*新大路方に領域を追加(大道寺・新野崎)*/
-.station-group.detention-sdt-1 { --sdt-area: 96px }
+.station-group.detention-sdt-1 { --sdt-area: 120px }
 /*館浜方に領域を追加(駒野電留線)*/
-.station-group.detention-tdt-1 { --tdt-area: 144px }
+.station-group.detention-tdt-1 { --tdt-area: 180px }
 /*館浜方+新大路方それぞれに引上げ線 (江ノ検)*/
-.station-group.detention-ddt-1 { --tdt-area: 96px; --sdt-area: 96px }
+.station-group.detention-ddt-1 { --tdt-area: 120px; --sdt-area: 120px }
 
 /*引き上げ線がある駅は、列車アイコンの位置を引き上げ線分ずらす*/
-.station-group.detention-sdt-h .train-icon { top: calc(50% + 24px) }
-.station-group.detention-sdt-1 .train-icon { top: calc(50% + 48px) }
-.station-group.detention-tdt-1 .train-icon { top: calc(50% - 72px) }
+.station-group.detention-sdt-h .train-icon[class*="train-icon-up"],
+.station-group.detention-sdt-h .train-icon[class*="train-icon-down"] {
+    top: calc(50% + 30px);
+}
+.station-group.detention-sdt-1 .train-icon[class*="train-icon-up"],
+.station-group.detention-sdt-1 .train-icon[class*="train-icon-down"] {
+    top: calc(50% + 60px);
+}
+.station-group.detention-tdt-1 .train-icon[class*="train-icon-up"],
+.station-group.detention-tdt-1 .train-icon[class*="train-icon-down"] {
+    top: calc(50% - 90px);
+}
+.station-group.detention-ddt-1 .train-icon[class*="train-icon-up"],
+.station-group.detention-ddt-1 .train-icon[class*="train-icon-down"] {
+    top: 50%;
+}
 
 .station-row {
     position: absolute;

@@ -95,7 +95,7 @@
 /*上り新大路方 引上げ線 (駅左上)*/
 .train-icon-usdt1 {
     position: absolute;
-    top: calc(50% - 96px) !important;
+    top: calc(var(--station-node-y, 50%) - 120px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -106,7 +106,7 @@
 
 .train-icon-usdt2 {
     position: absolute;
-    top: calc(50% - 96px) !important;
+    top: calc(var(--station-node-y, 50%) - 120px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -117,7 +117,7 @@
 
 .train-icon-usdt3 {
     position: absolute;
-    top: calc(50% - 96px) !important;
+    top: calc(var(--station-node-y, 50%) - 120px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -128,7 +128,7 @@
 
 .train-icon-husdt1 {
     position: absolute;
-    top: calc(50% - 48px) !important;
+    top: calc(var(--station-node-y, 50%) - 60px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -139,7 +139,7 @@
 
 .train-icon-husdt2 {
     position: absolute;
-    top: calc(50% - 48px) !important;
+    top: calc(var(--station-node-y, 50%) - 60px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -150,7 +150,7 @@
 
 .train-icon-husdt3 {
     position: absolute;
-    top: calc(50% - 48px) !important;
+    top: calc(var(--station-node-y, 50%) - 60px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -162,7 +162,7 @@
 /*下り新大路方 引上げ線 (駅右上)*/
 .train-icon-dsdt1 {
     position: absolute;
-    top: calc(50% - 96px) !important;
+    top: calc(var(--station-node-y, 50%) - 120px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -173,7 +173,7 @@
 
 .train-icon-dsdt2 {
     position: absolute;
-    top: calc(50% - 96px) !important;
+    top: calc(var(--station-node-y, 50%) - 120px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -184,7 +184,7 @@
 
 .train-icon-dsdt3 {
     position: absolute;
-    top: calc(50% - 96px) !important;
+    top: calc(var(--station-node-y, 50%) - 120px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -195,7 +195,7 @@
 
 .train-icon-hdsdt1 {
     position: absolute;
-    top: calc(50% - 48px) !important;
+    top: calc(var(--station-node-y, 50%) - 60px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -206,7 +206,7 @@
 
 .train-icon-hdsdt2 {
     position: absolute;
-    top: calc(50% - 48px) !important;
+    top: calc(var(--station-node-y, 50%) - 60px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -217,7 +217,7 @@
 
 .train-icon-hdsdt3 {
     position: absolute;
-    top: calc(50% - 48px) !important;
+    top: calc(var(--station-node-y, 50%) - 60px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -230,7 +230,7 @@
 /*上り館浜方 引上げ線 (駅左下)*/
 .train-icon-utdt1 {
     position: absolute;
-    top: calc(50% + 96px) !important;
+    top: calc(var(--station-node-y, 50%) + 120px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -241,7 +241,7 @@
 
 .train-icon-utdt2 {
     position: absolute;
-    top: calc(50% + 96px) !important;
+    top: calc(var(--station-node-y, 50%) + 120px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -252,7 +252,7 @@
 
 .train-icon-utdt3 {
     position: absolute;
-    top: calc(50% + 96px) !important;
+    top: calc(var(--station-node-y, 50%) + 120px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -263,7 +263,7 @@
 
 .train-icon-utdt4 {
     position: absolute;
-    top: calc(50% + 96px) !important;
+    top: calc(var(--station-node-y, 50%) + 120px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -274,7 +274,7 @@
 
 .train-icon-hutdt1 {
     position: absolute;
-    top: calc(50% + 48px) !important;
+    top: calc(var(--station-node-y, 50%) + 60px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -285,7 +285,7 @@
 
 .train-icon-hutdt2 {
     position: absolute;
-    top: calc(50% + 48px) !important;
+    top: calc(var(--station-node-y, 50%) + 60px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -296,7 +296,7 @@
 
 .train-icon-hutdt3 {
     position: absolute;
-    top: calc(50% + 48px) !important;
+    top: calc(var(--station-node-y, 50%) + 60px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -305,9 +305,20 @@
     margin-right:140px;
 }
 
+.train-icon-lutdt1 {
+    position: absolute;
+    top: calc(var(--station-node-y, 50%) + 180px);
+    transform: translateY(-50%);
+    width: 28px;
+    height: 40px;
+    z-index: 4;
+    right: 50%;
+    margin-right:40px;
+}
+
 .train-icon-lutdt2 {
     position: absolute;
-    top: calc(50% + 144px) !important;
+    top: calc(var(--station-node-y, 50%) + 180px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;
@@ -318,7 +329,7 @@
 
 .train-icon-lutdt3 {
     position: absolute;
-    top: calc(50% + 144px) !important;
+    top: calc(50% + 144px);
     transform: translateY(-50%);
     width: 28px;
     height: 40px;

@@ -365,7 +365,7 @@ ss = [
   ["TH71_24T", "TH70", "TH71", null],
   ["TH71_SST", "TH70", "TH71", null],
   ["TH71_TST", "TH71", "TH72", null],
-  ["TH75_1RET", "TH75", null, "hutdt1"],
+  ["TH75_1RET", "TH75", null, "utdt1"],
   ["TH75_1RT", "TH75", "TH76", null],
   ["TH75_4T", "TH75", null, "utdt4"],
   ["TH75_5RAT", "TH75", null, "up2"],
